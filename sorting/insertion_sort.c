@@ -38,7 +38,7 @@ static void test()
     const int size = rand() % 500; /* random array size */
     int *arr = (int *)calloc(size, sizeof(int));
 
-    /* generate size random numbers from -50 to 49 */  
+    /* generate size random numbers from -50 to 49 */
     for (int i = 0; i < size; i++)
     {
         arr[i] = (rand() % 100) - 50; /* signed random numbers */
@@ -52,7 +52,7 @@ static void test()
 }
 int main(int argc, const char *argv[])
 {
-    /* Intializes random number generator */
+    /* Initializes random number generator */
     srand(time(NULL));
     test();
     return 0;
